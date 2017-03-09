@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0" width="device-width"/>
+		<title>Otto's Army</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" href="http://fonts.sidearmsports.com/sidearm/sidearm_font.css" />
+		<link rel="stylesheet" type="text/css" href="css/site.css"/>
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<script type="text/javascript">
+            // This function gets the current time and injects it into the DOM
+            function updateClock() {
+                // Gets the current time
+                var now = new Date();
+ 
+                // Get the hours, minutes and seconds from the current time
+                var h = now.getHours();
+                var minutes = now.getMinutes();
+
+                // Format hours, minutes and seconds
+                
+                if (minutes < 10) {
+                    minutes = "0" + minutes;
+                }
+                if (h > 12) {
+                	h = h - 12
+                }
+                if (h < 10 ) {
+                  h = '0' + h
+                }
+ 
+                // Gets the element we want to inject the clock into
+                var elem = document.getElementById('clock');
+ 
+                // Sets the elements inner HTML value to our clock data
+                elem.innerHTML = h + ' : ' + minutes;
+            }
+
+            window.onscroll = function() {myFunction()};
+			function myFunction() {
+			    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+			        document.getElementById("header").className = "scroll";
+			    } else {
+			        document.getElementById("header").className = "";
+			    }
+			}
+        </script>
+	</head>
+	<body onload="setInterval('updateClock()', 200);">
+		<header id="header">
+			<div class="header_container">
+				<a href="index.html"><div class="logo"></div></a>
+				<div class="nav">
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="list.html">List Rules</a></li>
+						<li><a href="traditions.html">Traditions</a></li>
+						<li><a class="current" href="board.html">The Board</a></li>
+						<li data-magellan-arrival="contact ">
+                        	<a href="#contact" class="item">Contact Us</a>
+                    	</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="board_image">
+			<img src="images/eboard_header_bg.png" alt="executive board header">
+			<div class="title"></div>
+		</div>
+		<div class="container">
+			<div class="the_board">
+				<div class="the_board_container pagewidth">
+					<div class="member otto">
+						<img src="../images/sticky_otto_logo.png" alt="Otto" />
+						<div class="member_info_container">	
+							<div class="member_info">
+								<div class="name">Otto</div>
+								<div class="position">General</div>
+							</div>
+						</div>
+					</div>
+					<div class="member">
+						<img src="../images/johnny.jpg" alt="Johnny Oliver" />
+						<div class="member_info_container">
+							<div class="member_info">
+								<div class="name">Johnny Oliver</div>
+								<div class="position">President</div>
+							</div>
+						</div>
+					</div>
+					<div class="member">
+						<img src="../images/lexie.jpg" alt="Lexie Slavin" />
+						<div class="member_info_container">
+							<div class="member_info">
+								<div class="name">Lexie Slavin</div>
+								<div class="position">Vice President</div>
+							</div>
+						</div>
+					</div>
+					<div class="member">
+						<img src="../images/brian.jpg" alt="Brian Greenwood" />
+						<div class="member_info_container">	
+							<div class="member_info">
+								<div class="name">Brian Greenwood</div>
+								<div class="position">Treasurer</div>
+							</div>
+						</div>
+					</div>
+					<div class="member">
+						<img src="../images/kyle.jpg" alt="Kyle Trapp" />
+						<div class="member_info_container">	
+							<div class="member_info">
+								<div class="name">Kyle Trapp</div>
+								<div class="position">Social Media</div>
+							</div>
+						</div>
+					</div>
+					<div class="member">
+						<img src="../images/audra_alt.jpg" alt="Audra Linsner" />
+						<div class="member_info_container">	
+							<div class="member_info">
+								<div class="name">Audra Linsner</div>
+								<div class="position">Promotions</div>
+							</div>
+						</div>
+					</div>
+					<div class="member">
+						<img src="../images/katelyn.jpg" alt="Katelyn Caza" />
+						<div class="member_info_container">	
+							<div class="member_info">
+								<div class="name">Katelyn Caza</div>
+								<div class="position">Events</div>
+							</div>
+						</div>
+					</div>
+					<div class="member">
+						<img src="../images/austin.jpg" alt="Austin Freer" />
+						<div class="member_info_container">	
+							<div class="member_info">
+								<div class="name">Austin Freer</div>
+								<div class="position">Public Relations</div>
+							</div>
+						</div>
+					</div>
+					<div class="member">
+						<img src="../images/cynthia.jpg" alt="Cynthia Poirier" />
+						<div class="member_info_container">	
+							<div class="member_info">
+								<div class="name">Cynthia Poirier</div>
+								<div class="position">Secretary</div>
+							</div>
+						</div>
+					</div>
+					<div class="member">
+						<img src="../images/sticky_otto_logo.png" alt="David Sa" />
+						<div class="member_info_container">	
+							<div class="member_info">
+								<div class="name">David Sa</div>
+								<div class="position">Media Director</div>
+							</div>
+						</div>
+					</div>
+					<div class="member">
+						<img src="../images/sticky_otto_logo.png" alt="Seth Weingarten" />
+						<div class="member_info_container">	
+							<div class="member_info">
+								<div class="name">Seth Weingarten</div>
+								<div class="position">Web Designer</div>
+							</div>
+						</div>
+					</div>
+					<div class="member">
+						<img src="../images/sticky_otto_logo.png" alt="Gia Larez" />
+						<div class="member_info_container">	
+							<div class="member_info">
+								<div class="name">Nicholas Cohen</div>
+								<div class="position">Freshman Ambassador</div>
+							</div>
+						</div>
+					</div>
+					<div class="member">
+						<img src="../images/gia_alt.png" alt="Nicholas Cohen" />
+						<div class="member_info_container">	
+							<div class="member_info">
+								<div class="name">Gia Larez</div>
+								<div class="position">Freshman Ambassador</div>
+							</div>
+						</div>
+					</div>
+					<div class="member">
+						<img src="../images/kennedy_alt.jpg" alt="Kennedy Hagens" />
+						<div class="member_info_container">	
+							<div class="member_info">
+								<div class="name">Kennedy Hagens</div>
+								<div class="position">Freshman Ambassador</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<footer>
+			<div class="clock_container">
+				<div id="clock"></div>
+			</div>
+			<div id="contact" class="footer_container">
+				<div class="connect pagewidth">
+					<div class="connect_header">Connect With Otto's Army</div>
+					<a href="https://www.facebook.com/ottosarmy/" target="_blank">
+						<div class="icon facebook">
+							<div class="icon_text">Like Us on Facebook</div>
+						</div>
+					</a>
+					<a href="https://twitter.com/OttosArmy" target="_blank">
+						<div class="icon twitter">
+							<div class="icon_text">@OttosArmy</div>
+						</div>
+					</a>
+					<a href="https://www.instagram.com/ottosarmy/" target="_blank">
+						<div class="icon instagram">
+							<div class="icon_text">@OttosArmy</div>
+						</div>
+					</a>
+					<a href="https://www.youtube.com/user/OttosArmySU" target="_blank">
+						<div class="icon youtube">
+							<div class="icon_text">OttosArmySU</div>
+						</div>
+					</a>
+					<a href="https://listserv.syr.edu/scripts/wa.exe?SUBED1=OTTOSARMY&A=1" target="_blank">
+						<div class="icon email">
+							<div class="icon_text">Join the Listserve</div>
+						</div>
+					</a>
+					<div class="clearfix"></div>
+				</div>
+				<div class="official">
+					The official student section of the Syracuse Orange
+					<div class="privacy"><a href="http://www.sidearmsports.com/privacypolicy/" target="blank">Privacy</a> / <a href="http://www.sidearmsports.com/terms-of-service/" target="_blank">Policy</a></div>
+				</div>
+				<div class="sprite_container pagewidth">
+					<a href="http://www.sidearmsports.com" target="_blank"><div class="sprite"></div></a>
+				</div>
+			</div>
+		</footer>
+		<div class="sticky">
+			<div class="sticky_container pagewidth">
+				<div class="sticky_logo"></div>
+				<div id="scoreboard">
+					<div class="twitter-feed">
+						<!-- ko foreach: twitterFeed -->
+							<span class="tweet" data-bind="text: text"></span>
+						<!-- /ko  -->
+					</div>
+				</div>
+				<div class="hashtag">#OrangeNation</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+		<script type="text/javascript" src="http://assets.sidearmsports.com.s3.amazonaws.com/plugins/jquery.overflow-2.0.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+		<script>
+                $('[data-magellan-destination]').each(function(){
+                    $(this).scrollspy({
+                        min: $(this).offset().top,
+                        max: $(this).offset().top + $(this).height(),
+                        onEnter: function(element, position) {
+                            $("[data-magellan-arrival=" + $(element).data("magellan-destination") + "]").addClass('active');
+                        },
+                        onLeave: function(element, position) {
+                            $("[data-magellan-arrival=" + $(element).data("magellan-destination") + "]").removeClass('active');
+                        }
+                    });
+                }); 
+                
+                $('.item').click(function(e) {
+                    e.preventDefault();
+                    var elem = $(this).attr("href");
+                    $('html, body').animate({ scrollTop: $(elem).offset().top}, 1000);        
+                });
+                
+                
+                var $lcumenu = $(".nav");
+    
+                $(window).on("scroll", function(){
+                    $lcumenu.toggleClass("open", $(window).scrollTop() < 200);
+                });
+                
+                $(window).mousemove(function(e){
+                    $lcumenu.toggleClass("menuhover", e.clientX < $lcumenu.outerWidth() + parseInt($lcumenu.css("margin-left"), 10));
+                });
+            
+                $(window).scroll();
+
+                /* twitter feed */
+
+			  function ViewModel(){
+			/* twitter feed */
+
+			 $(window).load(function() {
+                setTimeout(function(){ 
+                    $("#scoreboard").overflow({
+                        duration:600,
+                        rotateTimeout: 10000,
+                        autoRotate: true,
+                        itemsPerPanel: 1,
+                        itemFilter: ".tweet",
+                        scrollDirection: "vertical",
+                        appendButtonsAfterCarousel:true,
+                        showPager: true,
+                        showPagerNumber: false
+                    });
+                }, 1000);
+            });
+
+			/* http://ottos.army/services/proxy.ashx?path=/services/search_twitter.aspx?q=from:ottosarmy */
+
+			self.twitterFeed = ko.observableArray([]);
+
+				$.get("/services/proxy.ashx?path=/services/search_twitter.aspx?q=from:ottosarmy")
+					.done(function(resp){
+						var tweets = resp.results;
+						self.twitterFeed(tweets);
+					});
+
+			}
+
+			ko.applyBindings(new ViewModel());
+        </script>
+	</body>
+</html>
